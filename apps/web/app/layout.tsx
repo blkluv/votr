@@ -17,8 +17,8 @@ const pressStart2P = Press_Start_2P({
 });
 
 // Replace with your actual deployed domain
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://YOUR_DOMAIN.com";
-const defaultTitle = "Ringable - Anonymous Voting";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://vs.twerk.dance";
+const defaultTitle = "VS - Anonymous Voting";
 const defaultDescription =
   "A client-side anonymous voting platform using ring signatures.";
 
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default: defaultTitle,
-    template: `%s | Ringable`, // Template for page titles
+    template: `%s | VS.`, // Template for page titles
   },
   description: defaultDescription,
   // Basic Open Graph and Twitter Card metadata
@@ -92,7 +92,7 @@ export default function RootLayout({
                 href="/"
                 className="text-xl md:text-2xl font-normal hover:text-pixel-accent transition-colors"
               >
-                RINGABLE
+                🆚
               </Link>
               <div className="flex gap-2 md:gap-4 items-center">
                 {/* Account Switcher */}
@@ -123,7 +123,7 @@ export default function RootLayout({
             <main className="min-h-[60vh] py-2">{children}</main>{" "}
             {/* Added padding */}
             <footer className="mt-4 pt-2 border-t-4 border-pixel-border text-center text-xs">
-              <p>&copy; {new Date().getFullYear()} Ringable</p>
+              <p>&copy; {new Date().getFullYear()} 🆚</p>
             </footer>
           </div>
         </ToastProvider>
